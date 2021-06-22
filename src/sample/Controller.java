@@ -25,8 +25,7 @@ public class Controller {
 
     /**
      * Method sends messages & displays them in the appropriate View of sample.xml
-     *
-     *  */
+     */
 
     @FXML
     private void send() {
@@ -44,8 +43,7 @@ public class Controller {
     /**
      * Method creates connection each user, receives messages from server &,
      * depending on the response, directs it to the appropriate View of sample.xml
-     *
-     *  */
+     */
 
     @FXML
     private void connect() {

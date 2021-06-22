@@ -11,16 +11,17 @@ public class Client extends Application {
 
     /**
      * Entry point
+     *
      * @param primaryStage (for all users)
-     *  */
+     */
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("яеребни вюр");
         primaryStage.setScene(new Scene(root, 550, 300));
         primaryStage.show();
-        primaryStage.setOnCloseRequest(e->{
+        primaryStage.setOnCloseRequest(e -> {
             Platform.exit();
             System.exit(0);
         });

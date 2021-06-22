@@ -37,4 +37,5 @@ public class Connection {
     public ObjectOutputStream getOos() {
         return oos;
     }
+
 }
