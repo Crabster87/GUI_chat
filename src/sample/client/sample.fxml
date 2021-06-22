@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<HBox prefHeight="300" prefWidth="550" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
+
+    <VBox prefHeight="300" prefWidth="120.0" style="-fx-background-color: #BB86FC">
+        <children>
+            <TextField alignment="CENTER" prefHeight="10.0" prefWidth="300.0"
+                       style="-fx-background-color: #BB86FC; -fx-border-color: #FFEB3B;" text="УЧАСТНИКИ">
+                <font>
+                    <Font name="Mistral" size="17.0"/>
+                </font>
+            </TextField>
+            <TextArea fx:id="userListTextArea" editable="false" prefHeight="290" prefWidth="300"
+                      style="-fx-border-width: 10px; -fx-background-color: black;">
+                <font>
+                    <Font name="Mongolian Baiti" size="15.0"/>
+                </font>
+            </TextArea>
+        </children>
+    </VBox>
+    <VBox prefHeight="300" prefWidth="430.0" style="-fx-background-color: #BB86FC">
+        <children>
+            <TextField alignment="CENTER" prefHeight="10.0" prefWidth="175.0"
+                       style="-fx-background-color: #BB86FC; -fx-border-color: #FFEB3B;" text="ЧАТ КОМНАТА">
+                <font>
+                    <Font name="Mistral" size="17.0"/>
+                </font>
+            </TextField>
+            <TextArea fx:id="textArea" editable="false" prefHeight="200.0" prefWidth="400.0"
+                      style="-fx-background-color: #BB86FC;" text="&#10;&#10;&#10;">
+                <font>
+                    <Font name="Times New Roman" size="17.0"/>
+                </font>
+            </TextArea>
+            <HBox prefHeight="25" prefWidth="400" style="-fx-background-color: #BB86FC;">
+                <children>
+                    <TextField fx:id="textField" prefHeight="40.0" prefWidth="315" promptText="Введите ваше сообщение"
+                               style="-fx-background-color: #B388FF; -fx-border-color: #FFEB3B;">
+                        <font>
+                            <Font name="Mongolian Baiti" size="19.0"/>
+                        </font>
+                    </TextField>
+                    <Button defaultButton="true" mnemonicParsing="false" onAction="#send" prefHeight="40.0"
+                            prefWidth="115.0" style="-fx-background-color: #BB86FC; -fx-border-color: #FFEB3B;"
+                            text="Отправить" textAlignment="CENTER" textFill="#171717">
+                        <font>
+                            <Font name="Mistral" size="19.0"/>
+                        </font>
+                    </Button>
+                </children>
+            </HBox>
+            <Button fx:id="connectionButton" mnemonicParsing="false" onAction="#connect" prefHeight="20.0"
+                    prefWidth="430.0" style="-fx-background-color: #BB86FC; -fx-border-color: #FFEB3B;"
+                    text="Подключиться" textAlignment="CENTER" textFill="#171717">
+                <font>
+                    <Font name="Mistral" size="19.0"/>
+                </font>
+            </Button>
+        </children>
+    </VBox>
+</HBox>
